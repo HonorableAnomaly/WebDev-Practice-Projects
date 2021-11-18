@@ -7,8 +7,10 @@
     <title>Marathon Entry Form</title>
   </head>
   <body>
-    <form action="/marathon">
+    <!-- Title header -->
+    <h1>Race Registration!</h1>
 
+    <form action="">
       <!-- First and last name text fields with labels and required attributes -->
       <div>
         <label for="firstname">First Name </label>
@@ -20,15 +22,15 @@
 
       <!-- A radio input with several options linked to their labels and each other for only one option at a time -->
       <div>
-        <input type="radio" name="race" id="funrun5k" value="5k"/>
+        <input type="radio" name="race" id="funrun5k" value="5k" />
         <label for="funrun5k">Fun Run 5k</label>
       </div>
       <div>
-        <input type="radio" name="race" id="halfmarathon" value="half"/>
+        <input type="radio" name="race" id="halfmarathon" value="half" />
         <label for="halfmarathon">Half Marathon</label>
       </div>
       <div>
-        <input type="radio" name="race" id="fullmarathon" value="full"/>
+        <input type="radio" name="race" id="fullmarathon" value="full" />
         <label for="fullmarathon">Full Marathon</label>
       </div>
       <p></p>
@@ -48,12 +50,14 @@
       <div>
         <label for="age">Select Age Group </label>
         <select name="age" id="age">
-            <option value="" selected>---Choose One---</option>
-            <option value="minor">Under 18</option>
-            <option value="youngadult">18-29</option>
-            <option value="adult">30-49</option>
-            <option value="elder">50+</option>
+          <option value="" selected>---Choose One---</option>
+          <option value="minor">Under 18</option>
+          <option value="youngadult">18-29</option>
+          <option value="adult">30-49</option>
+          <option value="elder">50+</option>
+        </select>
       </div>
+      <p></p>
 
       <!-- A button to submit the form -->
       <button>Register!</button>
