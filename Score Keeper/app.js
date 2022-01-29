@@ -2,12 +2,14 @@ const p1 = {
   score: 0,
   button: document.querySelector("#p1Button"),
   display: document.querySelector("#p1Display"),
+  games: document.querySelector("#p1Games"),
 };
 
 const p2 = {
   score: 0,
   button: document.querySelector("#p2Button"),
   display: document.querySelector("#p2Display"),
+  games: document.querySelector("#p2Games"),
 };
 
 const resetButton = document.querySelector("#reset");
@@ -24,6 +26,8 @@ function updateScores(player, opponent) {
       opponent.display.classList.add("has-text-danger");
       player.button.disabled = true;
       opponent.button.disabled = true;
+      player.games.insertAdjacentText("beforeend", "O ");
+      opponent.games.insertAdjacentText("beforeend", "X ");
     }
     player.display.textContent = player.score;
   }
